@@ -1,0 +1,70 @@
+html,body{
+	margin: 0;
+}
+
+.board.selection > div{
+	cursor: pointer;
+}
+#app .board{
+	width: 400px;
+	height: 400px;
+}
+
+.board{
+	display: block;
+	border: 1px solid red;
+	box-sizing: content-box;
+	margin-left: auto;
+	margin-right: auto;
+}
+.board > div{
+	width: 12.5%;
+	height: 12.5%;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	float: left;
+	text-align: center;
+	font-size: 14px;
+	line-height: 25px;
+}
+.board > div.black{
+	background-color: black;
+	color: white;
+
+}
+.board > div.white{
+	background-color: white;
+	color: black;
+
+}
+.board > div.origin:before,
+.board > div.destination:before{
+	content: "x";
+	display: block;
+	text-align: center;
+	font-size: 30px;
+	line-height: 44px;
+}
+.board > div.white.origin:before,
+.board > div.white.destination:before{
+	color: black;
+}
+.board > div.black.origin:before,
+.board > div.black.destination:before{
+	color: white;
+}
+
+#status, #count, #track p{
+	text-align: center;
+}
+
+#track{
+	padding: 15px;
+}
+#track .board{
+	width: 200px;
+	height: 200px;
+	margin: 15px;
+	display: inline-block;
+}
